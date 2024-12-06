@@ -51,7 +51,7 @@ console.log(speciality);
     onClick={() =>
       speciality === "Dematologist"
         ? navigate(`/doctors`)
-        : navigate(`/doctors/${encodeURIComponent("Dematologist")}`)
+        : navigate(`/doctors/("Dematologist")}`)
     }
     className="w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer"
   >
