@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
 const Doctors = () => {
   const { speciality } = useParams();
-  console.log(speciality);
+  // console.log(speciality);
   const [filterDoc, setFilterDoc] = useState([]);
 
   const { doctors } = useContext(AppContext);
