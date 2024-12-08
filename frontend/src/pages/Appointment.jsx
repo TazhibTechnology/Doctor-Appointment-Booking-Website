@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
 import { assets } from "../assets/assets_frontend/assets";
@@ -19,7 +19,8 @@ const Appointment = () => {
     fetchDocInfo();
   }, [doctors, docId]);
 
-  return docInfo && (
+  return (
+    docInfo && (
       <div>
         {/* Doctor Details */}
         <div>
@@ -30,19 +31,25 @@ const Appointment = () => {
         <div>
           {/* Doc info name degree exper */}
           <p>
-            {docInfo.name} 
+            {docInfo.name}
             <img src={assets.verified_icon} alt='' />
           </p>
           <div>
-            <p>{docInfo.degree} - {docInfo.speciality}</p>
+            <p>
+              {docInfo.degree} - {docInfo.speciality}
+            </p>
             <button>{docInfo.experience}</button>
           </div>
           {/* doctor About */}
-          <div></div>
-
+          <div>
+            <p>
+              About <img src={assets.info_icon} alt='' />
+            </p>
+            <p>{docInfo.about}</p>
+          </div>
         </div>
       </div>
-    
+    )
   );
 };
 
