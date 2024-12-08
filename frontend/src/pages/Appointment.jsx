@@ -9,15 +9,16 @@ const Appointment = () => {
 
   const [docInfo, setDocInfo] = useState(null);
 
-  const fetchDocInfo = async () => {
-    const docInfo = doctors.find((doc) => doc._id === docId);
-    setDocInfo(docInfo);
-    // console.log(docInfo)
-  };
-
   useEffect(() => {
-    fetchDocInfo();
+    if (doctors && doctors.length > 0) {
+      const docInfo = doctors.find((doc) => doc._id === docId);
+      setDocInfo(docInfo || null); // اگر پزشک یافت نشود مقدار null قرار می‌گیرد
+    }
   }, [doctors, docId]);
+
+  if (!docInfo) {
+    return <p>Loading doctor details...</p>;
+  }
 
   return (
     docInfo && (
