@@ -41,12 +41,12 @@ const Appointment = () => {
             <button>{docInfo.experience}</button>
           </div>
           {/* doctor About */}
-          {/* <div>
+          <div>
             <p>
               About <img src={assets.info_icon} alt='' />
             </p>
             <p>{docInfo.about}</p>
-          </div> */}
+          </div>
         </div>
       </div>
     )
