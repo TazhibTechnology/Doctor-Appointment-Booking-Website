@@ -23,14 +23,14 @@ const Appointment = () => {
     docInfo && (
       <div>
         {/* Doctor Details */}
-        {/* <div>
+        <div>
           <div>
             <img src={docInfo.image} alt='' />
           </div>
         </div>
-        <div> */}
+        <div>
           {/* Doc info name degree exper */}
-          <p>
+          {/* <p>
             {docInfo.name}
             <img src={assets.verified_icon} alt='' />
           </p>
@@ -39,7 +39,7 @@ const Appointment = () => {
               {docInfo.degree} - {docInfo.speciality}
             </p>
             <button>{docInfo.experience}</button>
-          </div>
+          </div> */}
           {/* doctor About */}
           <div>
             <p>
