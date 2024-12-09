@@ -30,7 +30,7 @@ const Appointment = () => {
         </div>
         <div>
           {/* Doc info name degree exper */}
-          {/* <p>
+          <p>
             {docInfo.name}
             <img src={assets.verified_icon} alt='' />
           </p>
@@ -39,14 +39,14 @@ const Appointment = () => {
               {docInfo.degree} - {docInfo.speciality}
             </p>
             <button>{docInfo.experience}</button>
-          </div> */}
+          </div>
           {/* doctor About */}
-          <div>
+          {/* <div>
             <p>
               About <img src={assets.info_icon} alt='' />
             </p>
             <p>{docInfo.about}</p>
-          </div>
+          </div> */}
         </div>
       </div>
     )
