@@ -6,6 +6,7 @@ import { assets } from "../assets/assets_frontend/assets";
 const Appointment = () => {
   const { docId } = useParams();
   const { doctors, currencySymbol } = useContext(AppContext);
+  const daysOfWeek = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
 
   const [docInfo, setDocInfo] = useState(null);
   const [docSlots, setDocSlots] = useState([]);
@@ -63,7 +64,7 @@ const Appointment = () => {
         //increment current time by 30 minutes
         currentDate.setMinutes(currentDate.getMinutes() + 30);
       }
-      setDocSlots(prev =>([...prev, timeSlots]))
+      setDocSlots((prev) => [...prev, timeSlots]);
     }
   };
 
@@ -75,10 +76,9 @@ const Appointment = () => {
     getAvailableSlots();
   }, [docInfo]);
 
-  useEffect(()=>{
+  useEffect(() => {
     console.log(docSlots);
-
-  },[docSlots])
+  }, [docSlots]);
 
   return (
     docInfo && (
@@ -125,6 +125,7 @@ const Appointment = () => {
             </p>
           </div>
         </div>
+        
       </div>
     )
   );
