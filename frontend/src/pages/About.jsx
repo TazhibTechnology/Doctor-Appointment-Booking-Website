@@ -45,27 +45,26 @@ const About = () => {
         </p>
       </div>
       <div className='flex flex-col md:flex-row mb-20'>
-        <div className='border px-10 md:px-16  py-8 sm:py16 flex flex-col gap-5 text-[15px] hover: bg-primary hover:text-white transition-all duration-300 text-gray-600'>
-          <b>EFFICIENCY:</b>
-          <p>
-            Streomlined Appointment Scheduling That Fits Into Your Busy
-            Lifestyle.
-          </p>
-        </div>
-        <div className='border px-10 md:px-16  py-8 sm:py16 flex flex-col gap-5 text-[15px] hover: bg-primary hover:text-white transition-all duration-300 text-gray-600'>
-          <b>CONVENIENCE:</b>
-          <p>
-            Access To A Trenrar a frusted Healthcare Professionols In Your Area.
-          </p>
-        </div>
-        <div className='border px-10 md:px-16  py-8 sm:py16 flex flex-col gap-5 text-[15px] hover: bg-primary hover:text-white transition-all duration-300 text-gray-600'>
-          <b>PERSONALIZATION:</b>
-          <p>
-            Tailered Recommendations And Reminders To Help You Stay On Top Of
-            Your Health.
-          </p>
-        </div>
-      </div>
+  <div className='border px-10 md:px-16 py-8 sm:py16 flex flex-col gap-5 text-[15px] hover:bg-primary hover:text-white transition-all duration-300 text-gray-600'>
+    <b>EFFICIENCY:</b>
+    <p>
+      Streamlined Appointment Scheduling That Fits Into Your Busy Lifestyle.
+    </p>
+  </div>
+  <div className='border px-10 md:px-16 py-8 sm:py16 flex flex-col gap-5 text-[15px] hover:bg-primary hover:text-white transition-all duration-300 text-gray-600'>
+    <b>CONVENIENCE:</b>
+    <p>
+      Access To A Trusted Healthcare Professionals In Your Area.
+    </p>
+  </div>
+  <div className='border px-10 md:px-16 py-8 sm:py16 flex flex-col gap-5 text-[15px] hover:bg-primary hover:text-white transition-all duration-300 text-gray-600'>
+    <b>PERSONALIZATION:</b>
+    <p>
+      Tailored Recommendations And Reminders To Help You Stay On Top Of Your Health.
+    </p>
+  </div>
+</div>
+
     </div>
   );
 };
